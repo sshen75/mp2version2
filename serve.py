@@ -12,7 +12,7 @@ def resp():
     if request.method == 'POST':
         print(f'POST: test')
         # start a separate process for running stress_cpu.py
-        subprocess.Popen(['python', 'stress_cpu.py'])
+        subprocess.Popen(['python3', 'stress_cpu.py'])
         return 'Stressing CPU...'
     else:
         seed = socket.gethostname();
